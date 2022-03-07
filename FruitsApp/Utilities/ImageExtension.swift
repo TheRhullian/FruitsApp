@@ -10,7 +10,11 @@ import SwiftUI
 extension Image {
     // FRUITS
     static var blueberry: Image {
-        return Image("blueberry")
+        .init("blueberry")
+    }
+    
+    static var logo: Image {
+        .init("logo")
     }
     
     // SF Images
@@ -24,6 +28,14 @@ extension Image {
     
     static var systemInfoCircle: Image {
         .init(systemName: "info.circle")
+    }
+    
+    static var systemXMark: Image {
+        .init(systemName: "xmark")
+    }
+    
+    static var systemSliderHorizontal: Image {
+        .init(systemName: "slider.horizontal.3")
     }
     
     // modifications
