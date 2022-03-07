@@ -18,6 +18,10 @@ extension Image {
         .init(systemName: "arrow.right.circle")
     }
     
+    static var systemArrowSquareUpRight: Image {
+        .init(systemName: "arrow.up.right.square")
+    }
+    
     // modifications
     func cardImageModification() -> some View{
         self.resizable()
