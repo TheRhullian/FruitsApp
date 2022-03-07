@@ -8,7 +8,10 @@
 import SwiftUI
 
 @main
-struct FruitsAppApp: App {
+struct FruitsApp: App {
+    // MARK: - Storage
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+    
     var body: some Scene {
         WindowGroup {
             OnboardingView()

@@ -11,23 +11,25 @@ struct FruitCardView: View {
     //MARK: - Properties
     @State private var isAnimating: Bool = false
     
+    var fruit: Fruit
+    
     //MARK: - BODY
     var body: some View {
         ZStack {
             VStack(spacing: 20) {
                 //FRUIT IMAGE
-                Image.blueberry
+                Image(fruit.image)
                     .cardImageModification()
                     .scaleEffect(isAnimating ? 1 : 0.6)
                 //FRUIT TITLE
-                Text("Blueberry")
+                Text(fruit.title)
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .shadow(color: .shadowColor, radius: 2, x: 2, y: 2)
                 
                 // FRUIT SUBTITLE
-                Text("Blueberries are sweet, nutritious and windly popular fruit all over the world.")
+                Text(fruit.headline)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -44,9 +46,9 @@ struct FruitCardView: View {
             withAnimation(.easeOut(duration: 0.5)) {
                 isAnimating = true
             }
-        })
+        })//: ON APPEAR
         .frame(height:UIScreen.main.bounds.height * 0.85, alignment: .center)
-        .background(LinearGradient(gradient: .blueberryGradient, startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(gradient: fruit.gradient, startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
         .padding(.horizontal, 20)
     }//:BODY
@@ -55,8 +57,8 @@ struct FruitCardView: View {
 //MARK: - PREVIEW
 struct FruitCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitCardView()
+        FruitCardView(fruit: fruitsData[1])
             .previewLayout(.sizeThatFits)
-//            .preferredColorScheme(.dark)
+            .preferredColorScheme(.dark)
     }
 }
