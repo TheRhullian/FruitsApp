@@ -38,6 +38,10 @@ extension Image {
         .init(systemName: "slider.horizontal.3")
     }
     
+    static var systemAppsIphone: Image {
+        .init(systemName: "apps.iphone")
+    }
+    
     // modifications
     func cardImageModification() -> some View{
         self.resizable()

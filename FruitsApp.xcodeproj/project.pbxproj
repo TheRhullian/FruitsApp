@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C758D9E227D6550700FF73A5 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C758D9E127D6550700FF73A5 /* SettingsRowView.swift */; };
 		C7CEE88127D5684000B756D4 /* FruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CEE88027D5684000B756D4 /* FruitsApp.swift */; };
 		C7CEE88327D5684000B756D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CEE88227D5684000B756D4 /* ContentView.swift */; };
 		C7CEE88527D5684100B756D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CEE88427D5684100B756D4 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C758D9E127D6550700FF73A5 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsRowView.swift; path = FruitsApp/Views/SettingsRowView.swift; sourceTree = SOURCE_ROOT; };
 		C7CEE87D27D5684000B756D4 /* FruitsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CEE88027D5684000B756D4 /* FruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsApp.swift; sourceTree = "<group>"; };
 		C7CEE88227D5684000B756D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				C7CEE88227D5684000B756D4 /* ContentView.swift */,
 				C7CEE8BF27D5A38E00B756D4 /* FruitDetailView.swift */,
 				C7CEE8C727D5AD4100B756D4 /* SettingsView.swift */,
+				C758D9E127D6550700FF73A5 /* SettingsRowView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				C7CEE88127D5684000B756D4 /* FruitsApp.swift in Sources */,
 				C7CEE8C627D5A9AB00B756D4 /* FruitNutrientsView.swift in Sources */,
 				C7CEE8CA27D5B13200B756D4 /* SettingLabelView.swift in Sources */,
+				C758D9E227D6550700FF73A5 /* SettingsRowView.swift in Sources */,
 				C7CEE8B427D5729100B756D4 /* StartButtonView.swift in Sources */,
 				C7CEE8C027D5A38E00B756D4 /* FruitDetailView.swift in Sources */,
 				C7CEE8AF27D56C7A00B756D4 /* ImageExtension.swift in Sources */,
