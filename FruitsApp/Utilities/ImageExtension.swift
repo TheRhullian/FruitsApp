@@ -42,6 +42,10 @@ extension Image {
         .init(systemName: "apps.iphone")
     }
     
+    static var systemBrush: Image {
+        .init(systemName: "paintbrush")
+    }
+    
     // modifications
     func cardImageModification() -> some View{
         self.resizable()

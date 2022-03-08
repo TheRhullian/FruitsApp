@@ -35,11 +35,11 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                     .sheet(isPresented: $isShowingSettings) {
                         SettingsView()
-                    }
-
-                }
-            }
+                    }//:BUTTON
+                }//: TOOLBAR ITEM
+            }//: TOOLBAR
         }//: NAVIGATION VIEW
+        .navigationViewStyle(.stack)
     }
 }
 
